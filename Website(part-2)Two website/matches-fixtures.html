@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portugal National Football Team matches, fixtures and results.">
+
+    <title>Portugal National Football Team | Matches & Fixtures</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- SKIP LINK -->
+<a href="#mainContent" class="skipLink">
+    Skip to main content
+</a>
+
+
+<!--HEADER -->
+
+<header>
+
+    <!-- TOP ACCESSIBILITY BAR -->
+    <div class="topBar">
+        <div class="topBarContainer">
+
+            <!-- LANGUAGE -->
+            <div class="languageControl">
+                <i class="fa-solid fa-globe"></i>
+
+                <label for="languageSelect" class="srOnly">
+                    Select language
+                </label>
+
+                <select id="languageSelect"
+                        aria-label="Select website language">
+                    <option value="en">English</option>
+                    <option value="pt">Português</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="ne">नेपाली</option>
+                </select>
+            </div>
+
+            <!-- ACCESSIBILITY TOOLS -->
+            <div class="accessibilityTools">
+
+                <!-- FONT SIZE -->
+                <div class="fontControls">
+                    <button id="decreaseText" type="button"
+                            aria-label="Decrease text size">A−</button>
+
+                    <button id="normalText" class="active"
+                            type="button"
+                            aria-label="Normal text size">A</button>
+
+                    <button id="increaseText" type="button"
+                            aria-label="Increase text size">A+</button>
+                </div>
+
+                <!-- LIGHT / DARK MODE -->
+                <div class="themeControls">
+                    <button id="lightMode" class="active"
+                            type="button" aria-label="Light mode">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+
+                    <button id="darkMode"
+                            type="button" aria-label="Dark mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+
+                <!-- READ ALOUD -->
+                <button id="speechButton"
+                        class="speechButton"
+                        type="button"
+                        aria-label="Read page aloud">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <span>Read aloud</span>
+                </button>
+
+                <!-- SEARCH -->
+                <button id="searchButton"
+                        class="topSearchButton"
+                        type="button"
+                        aria-label="Search website">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+
+    <nav class="mainNavigation"
+         aria-label="Main navigation">
+
+        <div class="navigationContainer">
+
+            <!-- LOGO -->
+            <a href="index.html"
+               class="logoArea"
+               aria-label="Portugal National Football Team home">
+
+                <img src="pic/logo3.jpg"
+                     alt=""
+                     class="teamLogo">
+
+                <div class="logoText">
+                    <strong>PORTUGAL</strong>
+                    <span>NATIONAL FOOTBALL TEAM</span>
+                    <small>PAIXÃO QUE UNE</small>
+                </div>
+            </a>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button id="menuButton"
+                    class="menuButton"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- NAVIGATION LINKS -->
+            <ul id="navLinks" class="navLinks">
+
+                <li>
+                    <a href="index.html" data-i18n="home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="team.html" data-i18n="team">
+                        Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="history-honors.html" data-i18n="history">
+                        History &amp; Honors
+                    </a>
+                </li>
+
+                <li>
+                    <a href="matches-fixtures.html"
+                       class="currentPage"
+                       aria-current="page"
+                       data-i18n="matches">
+                        Matches &amp; Fixtures
+                    </a>
+                </li>
+
+                <li>
+                    <a href="news-updates.html" data-i18n="news">
+                        News &amp; Updates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="media-gallery.html" data-i18n="gallery">
+                        Media &amp; Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact-us.html" data-i18n="contact">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<!--SEARCH PANEL-->
+
+<div id="searchPanel" class="searchPanel">
+
+    <div class="searchContainer">
+
+        <label for="websiteSearch" class="srOnly">
+            Search website
+        </label>
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input id="websiteSearch"
+               type="search"
+               placeholder="Search Portugal website...">
+
+        <button id="closeSearch"
+                type="button"
+                aria-label="Close search">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+</div>
+
+<!--  MAIN CONTENT-->
+
+<main id="mainContent">
+
+    <!-- PAGE BANNER -->
+    <section class="matchesBanner">
+
+        <div class="matchesBannerContent">
+            <span>PORTUGAL FOOTBALL</span>
+
+            <h1>Matches &amp; Fixtures</h1>
+
+            <div class="titleLine"></div>
+
+            <p>
+                Follow Portugal's international matches,
+                upcoming fixtures and memorable results.
+            </p>
+
+            <a href="#upcomingFixtures" class="primaryButton">
+                Explore Fixtures
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- UPCOMING FIXTURES-->
+
+    <section class="fixturesSection" id="upcomingFixtures">
+
+        <h2>
+            <i class="fa-regular fa-calendar-days"></i>
+            Upcoming Fixtures
+        </h2>
+
+        <div class="sectionLine"></div>
+
+        <p class="fixturesIntro">
+            Stay connected with Portugal's next international
+            challenges and follow the national team.
+        </p>
+
+        <p class="fixtureNotice">
+            The following are demonstration fixtures.
+            Official dates, times and venues are yet to be confirmed.
+        </p>
+
+        <div class="fixturesGrid">
+
+            <!-- FIXTURE 1 -->
+            <article class="fixtureCard">
+
+                <span class="matchCompetition">
+                    International Match
+                </span>
+
+                <div class="fixtureTeams">
+                    <div class="fixtureTeam">
+                        <img src="pic/portugal1.jpg"
+                             alt="Portugal flag">
+                        <strong>PORTUGAL</strong>
+                    </div>
+
+                    <span class="fixtureVS">VS</span>
+
+                    <div class="fixtureTeam">
+                        <img src="spain.jpg" alt="Spain football team logo">
+                            <strong>SPAIN</strong>
+                    </div>
+                </div>
+
+                <div class="fixtureInformation">
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        Date: To be confirmed
+                    </p>
+
+                    <p>
+                        <i class="fa-regular fa-clock"></i>
+                        Time: To be confirmed
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Stadium: To be confirmed
+                    </p>
+                </div>
+
+                <button type="button"
+                        class="matchDetailsButton"
+                        aria-expanded="false">
+                    View Match Details
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+
+                <div class="matchExtra" hidden>
+                    <p>
+                        Portugal and Spain are two successful
+                        European national teams. Final match
+                        arrangements will be added when confirmed.
+                    </p>
+                </div>
+
+            </article>
+
+            <!-- FIXTURE 2 -->
+            <article class="fixtureCard">
+
+                <span class="matchCompetition">
+                    International Match
+                </span>
+
+                <div class="fixtureTeams">
+                    <div class="fixtureTeam">
+                        <img src="pic/portugal1.jpg"
+                             alt="Portugal flag">
+                        <strong>PORTUGAL</strong>
+                    </div>
+
+                    <span class="fixtureVS">VS</span>
+
+                    <div class="fixtureTeam">
+                        <img src="france.jpg" alt="France football team logo">
+                        <strong>FRANCE</strong>
+                    </div>
+                </div>
+
+                <div class="fixtureInformation">
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        Date: To be confirmed
+                    </p>
+
+                    <p>
+                        <i class="fa-regular fa-clock"></i>
+                        Time: To be confirmed
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Stadium: To be confirmed
+                    </p>
+                </div>
+
+                <button type="button"
+                        class="matchDetailsButton"
+                        aria-expanded="false">
+                    View Match Details
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+
+                <div class="matchExtra" hidden>
+                    <p>
+                        Portugal famously defeated France
+                        in the UEFA EURO 2016 final.
+                        This is a demonstration fixture.
+                    </p>
+                </div>
+
+            </article>
+
+            <!-- FIXTURE 3 -->
+            <article class="fixtureCard">
+
+                <span class="matchCompetition">
+                    International Match
+                </span>
+
+                <div class="fixtureTeams">
+                    <div class="fixtureTeam">
+                        <img src="pic/portugal1.jpg"
+                             alt="Portugal flag">
+                        <strong>PORTUGAL</strong>
+                    </div>
+
+                    <span class="fixtureVS">VS</span>
+
+                    <div class="fixtureTeam">
+                        <img src="germany.jpg" alt="Germany football team logo">
+                        <strong>GERMANY</strong>
+                    </div>
+                </div>
+
+                <div class="fixtureInformation">
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        Date: To be confirmed
+                    </p>
+
+                    <p>
+                        <i class="fa-regular fa-clock"></i>
+                        Time: To be confirmed
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Stadium: To be confirmed
+                    </p>
+                </div>
+
+                <button type="button"
+                        class="matchDetailsButton"
+                        aria-expanded="false">
+                    View Match Details
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+
+                <div class="matchExtra" hidden>
+                    <p>
+                        Portugal and Germany have met in
+                        several major European tournaments.
+                        Final fixture details are not yet available.
+                    </p>
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+
+    <!--  MEMORABLE RESULTS -->
+
+    <section class="resultsSection" id="recentResults">
+
+        <h2>
+            <i class="fa-solid fa-trophy"></i>
+            Memorable Results
+        </h2>
+
+        <div class="sectionLine"></div>
+
+        <p class="resultsIntro">
+            Relive historic matches that helped establish
+            Portugal among Europe's leading football nations.
+        </p>
+
+        <div class="resultsGrid">
+
+            <!-- RESULT 1 -->
+            <article class="resultCard">
+
+                <span class="resultCompetition">
+                    UEFA EURO 2016 FINAL
+                </span>
+
+                <div class="resultScore">
+                    <span>PORTUGAL</span>
+                    <strong>1 - 0</strong>
+                    <span>FRANCE</span>
+                </div>
+
+                <p>
+                    <i class="fa-regular fa-calendar"></i>
+                    10 July 2016
+                </p>
+
+                <p>
+                    Portugal won its first European Championship
+                    after defeating France in extra time.
+                </p>
+
+                <span class="resultStatus">
+                    <i class="fa-solid fa-circle-check"></i>
+                    PORTUGAL WON
+                </span>
+
+            </article>
+
+            <!-- RESULT 2 -->
+            <article class="resultCard">
+
+                <span class="resultCompetition">
+                    UEFA NATIONS LEAGUE 2019 FINAL
+                </span>
+
+                <div class="resultScore">
+                    <span>PORTUGAL</span>
+                    <strong>1 - 0</strong>
+                    <span>NETHERLANDS</span>
+                </div>
+
+                <p>
+                    <i class="fa-regular fa-calendar"></i>
+                    9 June 2019
+                </p>
+
+                <p>
+                    Portugal defeated the Netherlands to become
+                    the first UEFA Nations League champions.
+                </p>
+
+                <span class="resultStatus">
+                    <i class="fa-solid fa-circle-check"></i>
+                    PORTUGAL WON
+                </span>
+
+            </article>
+
+            <!-- RESULT 3 -->
+            <article class="resultCard">
+
+                <span class="resultCompetition">
+                    UEFA NATIONS LEAGUE 2025 FINAL
+                </span>
+
+                <div class="resultScore">
+                    <span>PORTUGAL</span>
+                    <strong>2 - 2</strong>
+                    <span>SPAIN</span>
+                </div>
+
+                <p>
+                    <i class="fa-regular fa-calendar"></i>
+                    8 June 2025
+                </p>
+
+                <p>
+                    Portugal defeated Spain 5–3 on penalties,
+                    winning its second Nations League title.
+                </p>
+
+                <span class="resultStatus">
+                    <i class="fa-solid fa-circle-check"></i>
+                    PORTUGAL WON ON PENALTIES
+                </span>
+
+            </article>
+
+        </div>
+    </section>
+
+    <!-- FOOTBALL LEGACY -->
+
+    <section class="matchesMoreSection">
+
+        <h2>Portugal's Competitive Spirit</h2>
+
+        <div class="sectionLine"></div>
+
+        <p>
+            From historic European Championship victories
+            to exciting international fixtures, Portugal
+            continues to compete with pride and determination.
+        </p>
+
+        <a href="history-honors.html" class="primaryButton">
+            Discover Our History
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="siteFooter">
+
+    <div class="footerContainer">
+
+        <!-- FOOTER LOGO -->
+        <div class="footerLogo">
+
+            <img src="logo.jpg"
+                 alt="Portugal National Football Team crest">
+
+            <div>
+                <strong>PORTUGAL</strong>
+                <span>NATIONAL FOOTBALL TEAM</span>
+                <small>PAIXÃO QUE UNE</small>
+            </div>
+
+        </div>
+
+        <!-- FOOTER NAVIGATION -->
+        <nav class="footerNavigation"
+             aria-label="Footer navigation">
+
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="history-honors.html">History &amp; Honors</a>
+            <a href="matches-fixtures.html">Matches &amp; Fixtures</a>
+            <a href="news-updates.html">News &amp; Updates</a>
+            <a href="media-gallery.html">Media &amp; Gallery</a>
+            <a href="contact-us.html">Contact Us</a>
+
+        </nav>
+
+        <!-- SOCIAL MEDIA -->
+        <div class="socialArea">
+
+            <div class="socialIcons">
+
+                <a href="https://www.facebook.com/"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.youtube.com/"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+            <p>© 2026 Portugal National Football Team</p>
+
+            <div class="creditLinks">
+
+                <a href="Sitemap.html">Sitemap</a>
+                <a href="Credits.html">Credits</a>
+                <a href="Authenticity.html">
+                    Statement of Authenticity
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- COMMON JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>

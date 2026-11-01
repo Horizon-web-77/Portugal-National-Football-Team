@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="News, stories and updates about the Portugal National Football Team.">
+
+    <title>Portugal National Football Team | News & Updates</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ACCESSIBILITY SKIP LINK -->
+<a href="#mainContent" class="skipLink">
+    Skip to main content
+</a>
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header>
+
+    <!-- TOP ACCESSIBILITY BAR -->
+    <div class="topBar">
+        <div class="topBarContainer">
+
+            <div class="languageControl">
+                <i class="fa-solid fa-globe"></i>
+
+                <label for="languageSelect" class="srOnly">
+                    Select language
+                </label>
+
+                <select id="languageSelect"
+                        aria-label="Select website language">
+                    <option value="en">English</option>
+                    <option value="pt">Português</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="ne">नेपाली</option>
+                </select>
+            </div>
+
+            <div class="accessibilityTools">
+
+                <!-- FONT SIZE -->
+                <div class="fontControls">
+                    <button id="decreaseText" type="button"
+                            aria-label="Decrease text size">A−</button>
+
+                    <button id="normalText" class="active"
+                            type="button"
+                            aria-label="Normal text size">A</button>
+
+                    <button id="increaseText" type="button"
+                            aria-label="Increase text size">A+</button>
+                </div>
+
+                <!-- THEME -->
+                <div class="themeControls">
+                    <button id="lightMode" class="active"
+                            type="button" aria-label="Light mode">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+
+                    <button id="darkMode"
+                            type="button" aria-label="Dark mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+
+                <!-- READ ALOUD -->
+                <button id="speechButton" class="speechButton"
+                        type="button" aria-label="Read page aloud">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <span>Read aloud</span>
+                </button>
+
+                <!-- SEARCH -->
+                <button id="searchButton" class="topSearchButton"
+                        type="button" aria-label="Search website">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="mainNavigation" aria-label="Main navigation">
+
+        <div class="navigationContainer">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logoArea"
+               aria-label="Portugal National Football Team home">
+
+                <img src="pic/logo3.jpg" alt="" class="teamLogo">
+
+                <div class="logoText">
+                    <strong>PORTUGAL</strong>
+                    <span>NATIONAL FOOTBALL TEAM</span>
+                    <small>PAIXÃO QUE UNE</small>
+                </div>
+            </a>
+
+            <!-- MOBILE MENU -->
+            <button id="menuButton" class="menuButton"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- PAGE LINKS -->
+            <ul id="navLinks" class="navLinks">
+
+                <li>
+                    <a href="index.html" data-i18n="home">Home</a>
+                </li>
+
+                <li>
+                    <a href="team.html" data-i18n="team">Team</a>
+                </li>
+
+                <li>
+                    <a href="history-honors.html" data-i18n="history">
+                        History &amp; Honors
+                    </a>
+                </li>
+
+                <li>
+                    <a href="matches-fixtures.html" data-i18n="matches">
+                        Matches &amp; Fixtures
+                    </a>
+                </li>
+
+                <li>
+                    <a href="news-updates.html"
+                       class="currentPage"
+                       aria-current="page"
+                       data-i18n="news">
+                        News &amp; Updates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="media-gallery.html" data-i18n="gallery">
+                        Media &amp; Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact-us.html" data-i18n="contact">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<!-- SEARCH PANEL -->
+<div id="searchPanel" class="searchPanel">
+    <div class="searchContainer">
+
+        <label for="websiteSearch" class="srOnly">
+            Search website
+        </label>
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input id="websiteSearch" type="search"
+               placeholder="Search Portugal website...">
+
+        <button id="closeSearch" type="button"
+                aria-label="Close search">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+</div>
+
+<!-- =====================================
+     MAIN CONTENT
+===================================== -->
+
+<main id="mainContent">
+
+    <!-- NEWS BANNER -->
+    <section class="newsBanner">
+
+        <div class="newsBannerContent">
+            <span>PORTUGAL FOOTBALL STORIES</span>
+
+            <h1>News &amp; Updates</h1>
+
+            <div class="titleLine"></div>
+
+            <p>
+                Explore Portugal's football stories,
+                famous victories and remarkable players.
+            </p>
+
+            <a href="#newsStories" class="primaryButton">
+                Explore Stories
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- FEATURED STORY -->
+    <section class="featuredNewsSection">
+
+        <h2>Featured Story</h2>
+        <div class="sectionLine"></div>
+
+        <article class="featuredNewsCard">
+
+            <img src="pic/team.jpg"
+                 alt="Portugal national football team"
+                 loading="lazy">
+
+            <div class="featuredNewsContent">
+
+                <span class="newsCategory">
+                    HISTORIC ACHIEVEMENT
+                </span>
+
+                <time datetime="2025-06-08">
+                    8 June 2025
+                </time>
+
+                <h3>
+                    Portugal Crowned Nations League
+                    Champions for the Second Time
+                </h3>
+
+                <p>
+                    Portugal claimed the UEFA Nations League
+                    title in 2025 after a dramatic final
+                    against Spain. The match finished 2–2,
+                    with Portugal winning 5–3 on penalties.
+                </p>
+
+                <a href="history-honors.html" class="newsReadMore">
+                    Explore This Achievement
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+    </section>
+
+    <!-- =====================================
+         NEWS STORIES AND FILTERS
+    ===================================== -->
+
+    <section class="allNewsSection" id="newsStories">
+
+        <h2>Football Stories</h2>
+        <div class="sectionLine"></div>
+
+        <p class="newsIntro">
+            Discover memorable events and the players
+            who shaped Portuguese football.
+        </p>
+
+        <!-- CATEGORY FILTERS -->
+        <div class="newsFilters" role="group"
+             aria-label="Filter football stories">
+
+            <button class="newsFilter active"
+                    type="button"
+                    data-filter="all"
+                    aria-pressed="true">
+                All Stories
+            </button>
+
+            <button class="newsFilter"
+                    type="button"
+                    data-filter="achievements"
+                    aria-pressed="false">
+                Achievements
+            </button>
+
+            <button class="newsFilter"
+                    type="button"
+                    data-filter="players"
+                    aria-pressed="false">
+                Players
+            </button>
+
+        </div>
+
+        <div class="allNewsGrid">
+
+            <!-- STORY 1 -->
+            <article class="storyCard"
+                     data-category="achievements">
+
+                <img src="pic/111.jpg"
+                     alt="Portugal football team"
+                     loading="lazy">
+
+                <div class="storyContent">
+
+                    <span class="newsCategory">
+                        ACHIEVEMENTS
+                    </span>
+
+                    <time datetime="2016-07-10">
+                        10 July 2016
+                    </time>
+
+                    <h3>
+                        Portugal Wins UEFA EURO 2016
+                    </h3>
+
+                    <p>
+                        Portugal defeated France 1–0
+                        after extra time to win its first
+                        European Championship.
+                    </p>
+
+                    <a href="history-honors.html"
+                       class="newsReadMore">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- STORY 2 -->
+            <article class="storyCard"
+                     data-category="achievements">
+
+                <img src="pic/team2.jpg"
+                     alt="Portugal national team players"
+                     loading="lazy">
+
+                <div class="storyContent">
+
+                    <span class="newsCategory">
+                        ACHIEVEMENTS
+                    </span>
+
+                    <time datetime="2019-06-09">
+                        9 June 2019
+                    </time>
+
+                    <h3>
+                        Portugal Wins First Nations League
+                    </h3>
+
+                    <p>
+                        Portugal defeated the Netherlands
+                        1–0 to become the first champions
+                        of the UEFA Nations League.
+                    </p>
+
+                    <a href="history-honors.html"
+                       class="newsReadMore">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- STORY 3 -->
+            <article class="storyCard"
+                     data-category="players">
+
+                <img src="pic/cr7.jpg"
+                     alt="Cristiano Ronaldo"
+                     loading="lazy">
+
+                <div class="storyContent">
+
+                    <span class="newsCategory">
+                        PLAYERS
+                    </span>
+
+                    <span class="storyDate">
+                        Player Profile
+                    </span>
+
+                    <h3>
+                        Cristiano Ronaldo:
+                        A Portugal Football Legend
+                    </h3>
+
+                    <p>
+                        Cristiano Ronaldo has played a
+                        major role in Portugal's football
+                        history and international success.
+                    </p>
+
+                    <a href="team.html"
+                       class="newsReadMore">
+                        Meet the Team
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- STORY 4 -->
+            <article class="storyCard"
+                     data-category="achievements">
+
+                <img src="pic/team5.jpg"
+                     alt="Portugal football players"
+                     loading="lazy">
+
+                <div class="storyContent">
+
+                    <span class="newsCategory">
+                        ACHIEVEMENTS
+                    </span>
+
+                    <time datetime="1966">
+                        1966
+                    </time>
+
+                    <h3>
+                        Portugal's Historic 1966 World Cup
+                    </h3>
+
+                    <p>
+                        Led by the legendary Eusébio,
+                        Portugal finished third at the
+                        FIFA World Cup in England.
+                    </p>
+
+                    <a href="history-honors.html"
+                       class="newsReadMore">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+            </article>
+
+        </div>
+
+        <p id="newsFilterStatus"
+           class="newsFilterStatus"
+           aria-live="polite">
+            Showing all 4 stories.
+        </p>
+
+    </section>
+
+    <!-- MORE UPDATES -->
+    <section class="newsMoreSection">
+
+        <h2>Stay Connected with Portugal</h2>
+
+        <div class="sectionLine"></div>
+
+        <p>
+            Follow Portugal's football journey,
+            explore upcoming matches and discover
+            the team's proud history.
+        </p>
+
+        <div class="newsMoreButtons">
+
+            <a href="matches-fixtures.html"
+               class="primaryButton">
+                View Fixtures
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="media-gallery.html"
+               class="primaryButton">
+                Media Gallery
+                <i class="fa-solid fa-images"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer class="siteFooter">
+
+    <div class="footerContainer">
+
+        <!-- FOOTER LOGO -->
+        <div class="footerLogo">
+
+            <img src="pic/logo.jpg"
+                 alt="Portugal National Football Team crest">
+
+            <div>
+                <strong>PORTUGAL</strong>
+                <span>NATIONAL FOOTBALL TEAM</span>
+                <small>PAIXÃO QUE UNE</small>
+            </div>
+
+        </div>
+
+        <!-- FOOTER LINKS -->
+        <nav class="footerNavigation"
+             aria-label="Footer navigation">
+
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="history-honors.html">History &amp; Honors</a>
+            <a href="matches-fixtures.html">Matches &amp; Fixtures</a>
+            <a href="news-updates.html">News &amp; Updates</a>
+            <a href="media-gallery.html">Media &amp; Gallery</a>
+            <a href="contact-us.html">Contact Us</a>
+
+        </nav>
+
+        <!-- SOCIAL MEDIA -->
+        <div class="socialArea">
+
+            <div class="socialIcons">
+
+                <a href="https://www.facebook.com/"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.youtube.com/"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+            <p>© 2026 Portugal National Football Team</p>
+
+            <div class="creditLinks">
+                <a href="Sitemap.html">Sitemap</a>
+                <a href="Credits.html">Credits</a>
+                <a href="Authenticity.html">
+                    Statement of Authenticity
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- SHARED JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
