@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portugal National Football Team website featuring team news, matches, history and media.">
+
+    <title>Portugal National Football Team | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+
+<body>
+
+<!-- ACCESSIBILITY: Skip Link -->
+<a href="#mainContent" class="skipLink">
+    Skip to main content
+</a>
+
+
+<!-- HEADER-->
+
+<header>
+
+    <!-- TOP ACCESSIBILITY BAR -->
+
+<div class="topBar">
+
+    <div class="topBarContainer">
+
+        <!-- LANGUAGE -->
+
+        <div class="languageControl">
+
+            <i class="fa-solid fa-globe"
+               aria-hidden="true"></i>
+
+            <label for="languageSelect"
+                   class="srOnly">
+                Select language
+            </label>
+
+            <select id="languageSelect"
+                    aria-label="Select website language">
+
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+                <option value="ne">नेपाली</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- ACCESSIBILITY TOOLS -->
+
+        <div class="accessibilityTools">
+
+            <!-- TEXT SIZE -->
+
+            <div class="fontControls"
+                 aria-label="Text size controls">
+
+                <button id="decreaseText"
+                        type="button"
+                        aria-label="Decrease text size">
+                    A−
+                </button>
+
+                <button id="normalText"
+                        type="button"
+                        class="active"
+                        aria-label="Normal text size">
+                    A
+                </button>
+
+                <button id="increaseText"
+                        type="button"
+                        aria-label="Increase text size">
+                    A+
+                </button>
+
+            </div>
+
+
+            <!-- LIGHT / DARK MODE -->
+
+            <div class="themeControls">
+
+                <button id="lightMode"
+                        type="button"
+                        class="active"
+                        aria-label="Light mode">
+
+                    <i class="fa-solid fa-sun"></i>
+
+                </button>
+
+                <button id="darkMode"
+                        type="button"
+                        aria-label="Dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- READ ALOUD -->
+
+            <button id="speechButton"
+                    class="speechButton"
+                    type="button"
+                    aria-label="Read page aloud">
+
+                <i class="fa-solid fa-volume-high"></i>
+
+                <span>Read aloud</span>
+
+            </button>
+
+
+            <!-- SEARCH -->
+
+            <button id="searchButton"
+                    class="topSearchButton"
+                    type="button"
+                    aria-label="Search website">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <span>Search</span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!--MAIN NAVIGATION-->
+
+    <nav class="mainNavigation"
+         aria-label="Main navigation">
+
+        <div class="navigationContainer">
+
+
+            <!-- Logo -->
+
+    <a href="index.html"
+         class="logoArea"
+        aria-label="Portugal National Football Team home">
+
+    <img src="pic/logo3.jpg"
+         alt=""
+         class="teamLogo">
+
+    <div class="logoText">
+
+        <strong>PORTUGAL</strong>
+
+        <span>
+            NATIONAL FOOTBALL TEAM
+        </span>
+
+        <small>
+            PAIXÃO QUE UNE
+        </small>
+
+    </div>
+
+</a>
+
+            <!-- Mobile Menu Button -->
+
+            <button id="menuButton"
+                    class="menuButton"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+            <!-- Navigation Links -->
+
+            <ul id="navLinks" class="navLinks">
+
+        <li>
+            <a href="index.html"
+             class="currentPage"
+             data-i18n="home">
+             Home
+           </a>
+
+        </li>
+
+    <li>
+        <a href="team.html"
+           data-i18n="team">
+            Team
+        </a>
+    </li>
+
+    <li>
+        <a href="history-honors.html"
+           data-i18n="history">
+            History &amp; Honors
+        </a>
+    </li>
+
+    <li>
+        <a href="matches-fixtures.html"
+           data-i18n="matches">
+            Matches &amp; Fixtures
+        </a>
+    </li>
+
+    <li>
+        <a href="news-updates.html"
+           data-i18n="news">
+            News &amp; Updates
+        </a>
+    </li>
+
+    <li>
+        <a href="media-gallery.html"
+           data-i18n="gallery">
+            Media &amp; Gallery
+        </a>
+    </li>
+
+    <li>
+    <a href="contact-us.html"
+       data-i18n="contact">
+        Contact Us
+    </a>
+    </li>
+
+      </ul>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!--SEARCH PANEL-->
+
+<div id="searchPanel"
+     class="searchPanel">
+
+    <div class="searchContainer">
+
+        <label for="websiteSearch"
+               class="srOnly">
+            Search website
+        </label>
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input id="websiteSearch"
+               type="search"
+               placeholder="Search Portugal website...">
+
+        <button id="closeSearch"
+                type="button"
+                aria-label="Close search">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- MAIN -->
+
+<main id="mainContent">
+
+
+    <!-- HERO SLIDESHOW -->
+
+    <section class="heroSlider"
+             aria-label="Portugal football highlights">
+
+
+        <!-- SLIDE 1 -->
+
+        <article class="slide active">
+
+            <img src="pic/111.jpg"
+                 alt="Portugal national football team">
+
+            <div class="heroShade"></div>
+
+            <div class="slideContent">
+
+                <span class="heroLabel">
+                    PORTUGAL
+                </span>
+
+                <h1>
+                    One Nation.<br>
+                    <strong>One Team.</strong>
+                </h1>
+
+                <p class="heroWords">
+                    HISTORY
+                    <span>•</span>
+                    PASSION
+                    <span>•</span>
+                    TOGETHER
+                </p>
+
+                <a href="history-honors.html"
+                   class="primaryButton">
+
+                    Discover Our Story
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- SLIDE 2 -->
+
+        <article class="slide">
+
+            <img src="pic/team.jpg"
+                 alt="Portugal players celebrating together">
+
+            <div class="heroShade"></div>
+
+            <div class="slideContent">
+
+                <span class="heroLabel">
+                    TOGETHER
+                </span>
+
+                <h2>
+                    Pride In Every<br>
+                    <strong>Moment.</strong>
+                </h2>
+
+                <p class="heroWords">
+                    TEAM
+                    <span>•</span>
+                    PRIDE
+                    <span>•</span>
+                    PORTUGAL
+                </p>
+
+                <a href="team.html"
+                   class="primaryButton">
+
+                    Meet The Team
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- SLIDE 3 -->
+
+        <article class="slide">
+
+            <img src="pic/team2.jpg"
+                 alt="Portugal football team preparing for a match">
+
+            <div class="heroShade"></div>
+
+            <div class="slideContent">
+
+                <span class="heroLabel">
+                    NEXT CHALLENGE
+                </span>
+
+                <h2>
+                    Ready For<br>
+                    <strong>Kick Off.</strong>
+                </h2>
+
+                <p class="heroWords">
+                    FOCUS
+                    <span>•</span>
+                    ENERGY
+                    <span>•</span>
+                    PASSION
+                </p>
+
+                <a href="matches-fixtures.html"
+                   class="primaryButton">
+
+                    View Fixtures
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Slider Arrows -->
+
+        <button id="previousSlide"
+                class="sliderArrow previousArrow"
+                type="button"
+                aria-label="Previous slide">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+        <button id="nextSlide"
+                class="sliderArrow nextArrow"
+                type="button"
+                aria-label="Next slide">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+
+
+        <!-- Slider Dots -->
+
+        <div class="sliderDots">
+
+            <button class="dot active"
+                    data-slide="0"
+                    aria-label="Show slide one">
+            </button>
+
+            <button class="dot"
+                    data-slide="1"
+                    aria-label="Show slide two">
+            </button>
+
+            <button class="dot"
+                    data-slide="2"
+                    aria-label="Show slide three">
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+   <!-- Next Match -->
+
+<section class="nextMatchSection"
+         aria-labelledby="nextMatchHeading">
+
+    <div class="matchCard">
+
+        <!-- Heading -->
+        <div class="matchTitle">
+            <h2 id="nextMatchHeading"
+                data-i18n="nextMatch">
+                 Next<br>Match
+            </h2>
+
+            <div class="smallColourLine"></div>
+
+            <p>
+                UEFA Nations League
+            </p>
+
+        </div>
+
+
+        <!-- Portugal -->
+        <div class="matchTeam">
+
+            <img src="pic/portugal1.jpg"
+                 alt="Portugal flag">
+
+            <strong>PORTUGAL</strong>
+
+        </div>
+
+
+        <!-- Match Information -->
+        <div class="matchDetails">
+
+            <p>
+                <i class="fa-regular fa-calendar"></i>
+                Thursday, 24 September 2026
+            </p>
+
+            <p>
+                <i class="fa-regular fa-clock"></i>
+                7:45 PM
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Estádio José Alvalade, Lisbon
+            </p>
+
+            <span class="versus">
+                VS
+            </span>
+
+        </div>
+
+
+        <!-- Wales -->
+        <div class="matchTeam">
+
+            <img src="pic/wales.jpg"
+                 alt="Wales flag">
+
+            <strong>WALES</strong>
+
+        </div>
+
+
+        <!-- Details Button -->
+        <div class="matchButtonArea">
+
+            <a href="matches-fixtures.html"
+               class="primaryButton">
+
+                Match Details
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+   <!-- Latest News -->
+
+<section class="newsSection"
+         aria-labelledby="newsHeading">
+
+    <div class="sectionHeader">
+
+        <div>
+            <h2 id="newsHeading"
+                data-i18n="latestNews">
+                Latest News
+           </h2>
+
+            <div class="headingLine"></div>
+        </div>
+
+        <a href="news-updates.html"
+            class="viewAll">
+    
+        <span data-i18n="viewAllNews">
+             View All News
+        </span>
+
+       <i class="fa-solid fa-arrow-right"
+       aria-hidden="true"></i>
+
+       </a>
+
+
+    </div>
+
+
+    <div class="newsGrid">
+
+        <!-- NEWS 1 -->
+
+        <article class="newsCard">
+
+            <img src="pic/cr7.jpg"
+                 alt="Portugal national football team">
+
+            <div class="newsInformation">
+
+                <time datetime="2026-09-24">
+                    24 Sep 2026
+                </time>
+
+                <h3>
+                    Portugal Begin Nations League
+                    Campaign Against Wales
+                </h3>
+
+                <p>
+                    Portugal open their 2026/27 UEFA Nations League
+                    campaign against Wales in Lisbon.
+                </p>
+
+                <a href="news-updates.html">
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- NEWS 2 -->
+
+        <article class="newsCard">
+
+            <img src="pic/cr71.jpg"
+                 alt="Cristiano Ronaldo representing Portugal">
+
+            <div class="newsInformation">
+
+                <time datetime="2026-09-18">
+                    18 Sep 2026
+                </time>
+
+                <h3>
+                    Ronaldo Included in Portugal's
+                    Nations League Squad
+                </h3>
+
+                <p>
+                    Cristiano Ronaldo has been selected for
+                    Portugal's new Nations League campaign.
+                </p>
+
+                <a href="news-updates.html">
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- NEWS 3 -->
+
+        <article class="newsCard">
+
+            <img src="pic/manager.jpg"
+                 alt="Portugal head coach Jorge Jesus">
+
+            <div class="newsInformation">
+
+                <time datetime="2026-09-24">
+                    24 Sep 2026
+                </time>
+
+                <h3>
+                    Jorge Jesus Begins New Era
+                    With Portugal
+                </h3>
+
+                <p>
+                    Portugal begin a new chapter as Jorge Jesus
+                    takes charge of the national team.
+                </p>
+
+                <a href="news-updates.html">
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!--  FOOTER  -->
+
+<footer class="siteFooter">
+
+    <div class="footerContainer">
+
+
+        <!-- Logo -->
+
+        <div class="footerLogo">
+
+            <img src="pic/logo.jpg"
+                 alt="Portugal National Football Team crest">
+
+            <div>
+
+                <strong>PORTUGAL</strong>
+
+                <span>
+                    NATIONAL FOOTBALL TEAM
+                </span>
+
+                <small>
+                    PAIXÃO QUE UNE
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer Links -->
+
+        <nav class="footerNavigation"
+             aria-label="Footer navigation">
+
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="history-honors.html">History &amp; Honors</a>
+            <a href="matches-fixtures.html">Matches &amp; Fixtures</a>
+            <a href="news-updates.html">News &amp; Updates</a>
+            <a href="media-gallery.html">Media &amp; Gallery</a>
+            <a href="contact-us.html">Contact Us</a>
+
+        </nav>
+
+
+
+        <!-- Social -->
+
+        <div class="socialArea">
+
+            <div class="socialIcons">
+
+                <a href="https://www.facebook.com//"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com//"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.YouTube.com//"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+            <p>
+                © 2026 Portugal National Football Team
+            </p>
+
+            <div class="creditLinks">
+
+                <a href="Sitemap.html">Sitemap</a>
+                <a href="Credits.html">Credits</a>
+                <a href="Authenticity.html">Statement of Authenticity</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Portugal football fan website.">
+    <title>Portugal National Football Team | Contact Us</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- SKIP LINK -->
+<a href="#mainContent" class="skipLink">Skip to main content</a>
+
+<!-- HEADER -->
+<header>
+
+    <!-- ACCESSIBILITY BAR -->
+    <div class="topBar">
+        <div class="topBarContainer">
+
+            <div class="languageControl">
+                <i class="fa-solid fa-globe"></i>
+
+                <label for="languageSelect" class="srOnly">
+                    Select language
+                </label>
+
+                <select id="languageSelect"
+                        aria-label="Select website language">
+                    <option value="en">English</option>
+                    <option value="pt">Português</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="ne">नेपाली</option>
+                </select>
+            </div>
+
+            <div class="accessibilityTools">
+
+                <!-- FONT CONTROLS -->
+                <div class="fontControls">
+                    <button id="decreaseText" type="button"
+                            aria-label="Decrease text size">A−</button>
+
+                    <button id="normalText" class="active"
+                            type="button"
+                            aria-label="Normal text size">A</button>
+
+                    <button id="increaseText" type="button"
+                            aria-label="Increase text size">A+</button>
+                </div>
+
+                <!-- LIGHT AND DARK MODE -->
+                <div class="themeControls">
+                    <button id="lightMode" class="active"
+                            type="button" aria-label="Light mode">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+
+                    <button id="darkMode" type="button"
+                            aria-label="Dark mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+
+                <!-- READ ALOUD -->
+                <button id="speechButton" class="speechButton"
+                        type="button" aria-label="Read page aloud">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <span>Read aloud</span>
+                </button>
+
+                <!-- SEARCH -->
+                <button id="searchButton" class="topSearchButton"
+                        type="button" aria-label="Search website">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="mainNavigation" aria-label="Main navigation">
+
+        <div class="navigationContainer">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logoArea"
+               aria-label="Portugal National Football Team home">
+
+                <img src="pic/logo3.jpg"
+                     alt="" class="teamLogo">
+
+                <div class="logoText">
+                    <strong>PORTUGAL</strong>
+                    <span>NATIONAL FOOTBALL TEAM</span>
+                    <small>PAIXÃO QUE UNE</small>
+                </div>
+            </a>
+
+            <!-- MOBILE MENU -->
+            <button id="menuButton" class="menuButton"
+                    type="button" aria-label="Open navigation menu"
+                    aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- PAGE LINKS -->
+            <ul id="navLinks" class="navLinks">
+
+                <li>
+                    <a href="index.html" data-i18n="home">Home</a>
+                </li>
+
+                <li>
+                    <a href="team.html" data-i18n="team">Team</a>
+                </li>
+
+                <li>
+                    <a href="history-honors.html" data-i18n="history">
+                        History &amp; Honors
+                    </a>
+                </li>
+
+                <li>
+                    <a href="matches-fixtures.html" data-i18n="matches">
+                        Matches &amp; Fixtures
+                    </a>
+                </li>
+
+                <li>
+                    <a href="news-updates.html" data-i18n="news">
+                        News &amp; Updates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="media-gallery.html" data-i18n="gallery">
+                        Media &amp; Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact-us.html" class="currentPage"
+                       aria-current="page" data-i18n="contact">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- SEARCH PANEL -->
+<div id="searchPanel" class="searchPanel">
+    <div class="searchContainer">
+
+        <label for="websiteSearch" class="srOnly">
+            Search website
+        </label>
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input id="websiteSearch" type="search"
+               placeholder="Search Portugal website...">
+
+        <button id="closeSearch" type="button"
+                aria-label="Close search">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+</div>
+
+<!-- =====================================
+     MAIN CONTENT
+===================================== -->
+<main id="mainContent">
+
+    <!-- CONTACT PAGE HEADING -->
+    <section class="contactPageHeading">
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- CONTACT INFORMATION AND FORM -->
+    <section class="contactSection">
+
+        <div class="contactLayout">
+
+            <!-- LEFT: CONTACT INFORMATION -->
+            <div class="contactDetails">
+
+                <h2>Contact Information</h2>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <strong>Email:</strong>
+                    hardik@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <strong>Phone:</strong>
+                    057456***
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <strong>Address:</strong>
+                    Napier, New Zealand
+                </p>
+
+            </div>
+
+            <!-- RIGHT: CONTACT FORM -->
+            <div class="contactFormCard">
+
+                <h2>Contact Form</h2>
+
+                <form id="contactForm">
+
+                    <!-- FULL NAME -->
+                    <div class="formGroup">
+                        <label for="contactName">Full Name</label>
+                        <input type="text"
+                               id="contactName"
+                               name="name"
+                               placeholder="Enter your full name"
+                               minlength="2"
+                               required>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="formGroup">
+                        <label for="contactEmail">Email</label>
+                        <input type="email"
+                               id="contactEmail"
+                               name="email"
+                               placeholder="Enter your email"
+                               required>
+                    </div>
+
+                    <!-- PHONE NUMBER -->
+                    <div class="formGroup">
+                        <label for="contactPhone">Phone No.</label>
+                        <input type="tel"
+                               id="contactPhone"
+                               name="phone"
+                               placeholder="Enter phone number">
+                    </div>
+
+                    <!-- CATEGORY -->
+                    <div class="formGroup">
+                        <label for="contactCategory">Category</label>
+                        <select id="contactCategory"
+                                name="category" required>
+
+                            <option value="">Select Category</option>
+                            <option value="General Enquiry">General Enquiry</option>
+                            <option value="Team Information">Team Information</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+
+                        </select>
+                    </div>
+
+                    <!-- MESSAGE -->
+                    <div class="formGroup">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage"
+                                  name="message"
+                                  rows="5"
+                                  minlength="10"
+                                  placeholder="Enter your message"
+                                  required></textarea>
+                    </div>
+
+                    <!-- SEND BUTTON -->
+                    <button type="submit" class="contactSubmit">
+                        SEND
+                    </button>
+
+                    <p id="contactFormStatus"
+                       role="status"
+                       aria-live="polite"></p>
+
+                    <p class="contactDemoNotice">
+                        Demonstration form only. Messages are not sent.
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="contactLocation">
+
+        <h2>Location</h2>
+
+        <iframe
+            title="Example map of Napier, New Zealand"
+            src="https://maps.google.com/maps?q=Napier%2C%20New%20Zealand&amp;output=embed"
+            width="100%"
+            height="350"
+            loading="lazy">
+        </iframe>
+
+    </section>
+
+</main>
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+<footer class="siteFooter">
+
+    <div class="footerContainer">
+
+        <!-- FOOTER LOGO -->
+        <div class="footerLogo">
+
+            <img src="pic/logo.jpg"
+                 alt="Portugal National Football Team crest">
+
+            <div>
+                <strong>PORTUGAL</strong>
+                <span>NATIONAL FOOTBALL TEAM</span>
+                <small>PAIXÃO QUE UNE</small>
+            </div>
+        </div>
+
+        <!-- FOOTER NAVIGATION -->
+        <nav class="footerNavigation"
+             aria-label="Footer navigation">
+
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="history-honors.html">History &amp; Honors</a>
+            <a href="matches-fixtures.html">Matches &amp; Fixtures</a>
+            <a href="news-updates.html">News &amp; Updates</a>
+            <a href="media-gallery.html">Media &amp; Gallery</a>
+            <a href="contact-us.html">Contact Us</a>
+
+        </nav>
+
+        <!-- SOCIAL MEDIA -->
+        <div class="socialArea">
+
+            <div class="socialIcons">
+
+                <a href="https://www.facebook.com/"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.youtube.com/"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+            <p>© 2026 Portugal National Football Team</p>
+
+            <div class="creditLinks">
+
+                <a href="Sitemap.html">Sitemap</a>
+                <a href="Credits.html">Credits</a>
+                <a href="Authenticity.html">
+                    Statement of Authenticity
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

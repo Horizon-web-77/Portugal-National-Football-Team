@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="History and achievements of the Portugal National Football Team.">
+
+    <title>Portugal National Football Team | History & Honors</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<a href="#mainContent" class="skipLink">
+    Skip to main content
+</a>
+
+<!-- HEADER -->
+<header>
+
+    <!-- TOP ACCESSIBILITY BAR -->
+    <div class="topBar">
+        <div class="topBarContainer">
+
+            <div class="languageControl">
+                <i class="fa-solid fa-globe"></i>
+
+                <select id="languageSelect"
+                        aria-label="Select language">
+                    <option value="en">English</option>
+                    <option value="pt">Português</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="ne">नेपाली</option>
+                </select>
+            </div>
+
+            <div class="accessibilityTools">
+
+                <!-- FONT SIZE -->
+                <div class="fontControls">
+                    <button id="decreaseText" type="button">A−</button>
+                    <button id="normalText" class="active" type="button">A</button>
+                    <button id="increaseText" type="button">A+</button>
+                </div>
+
+                <!-- LIGHT AND DARK MODE -->
+                <div class="themeControls">
+                    <button id="lightMode" class="active"
+                            type="button" aria-label="Light mode">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+
+                    <button id="darkMode"
+                            type="button" aria-label="Dark mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+
+                <!-- READ ALOUD -->
+                <button id="speechButton"
+                        class="speechButton" type="button">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <span>Read aloud</span>
+                </button>
+
+                <!-- SEARCH -->
+                <button id="searchButton"
+                        class="topSearchButton" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="mainNavigation"
+         aria-label="Main navigation">
+
+        <div class="navigationContainer">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logoArea">
+
+                <img src="pic/logo3.jpg"
+                     alt="Portugal Football Team Logo"
+                     class="teamLogo">
+
+                <div class="logoText">
+                    <strong>PORTUGAL</strong>
+                    <span>NATIONAL FOOTBALL TEAM</span>
+                    <small>PAIXÃO QUE UNE</small>
+                </div>
+
+            </a>
+
+            <!-- MENU BUTTON -->
+            <button id="menuButton"
+                    class="menuButton"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- PAGE LINKS -->
+            <ul id="navLinks" class="navLinks">
+
+                <li>
+                    <a href="index.html" data-i18n="home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="team.html" data-i18n="team">
+                        Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="history-honors.html"
+                       class="currentPage"
+                       aria-current="page"
+                       data-i18n="history">
+                        History & Honors
+                    </a>
+                </li>
+
+                <li>
+                    <a href="matches-fixtures.html"
+                       data-i18n="matches">
+                        Matches & Fixtures
+                    </a>
+                </li>
+
+                <li>
+                    <a href="news-updates.html" data-i18n="news">
+                        News & Updates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="media-gallery.html" data-i18n="gallery">
+                        Media & Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact-us.html" data-i18n="contact">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+</header>
+
+<!-- SEARCH PANEL -->
+<div id="searchPanel" class="searchPanel">
+
+    <div class="searchContainer">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input id="websiteSearch"
+               type="search"
+               aria-label="Search website"
+               placeholder="Search Portugal website...">
+
+        <button id="closeSearch"
+                type="button"
+                aria-label="Close search">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+</div>
+
+
+<!-- MAIN CONTENT -->
+<main id="mainContent">
+
+    <!-- HISTORY BANNER -->
+    <section class="historyBanner">
+
+
+        <div class="historyBannerContent">
+            <span>PORTUGAL FOOTBALL LEGACY</span>
+
+            <h1>History & Honors</h1>
+
+            <div class="titleLine"></div>
+
+            <p>
+                Discover Portugal's greatest football
+                moments and historic achievements.
+            </p>
+
+            <a href="#milestones" class="primaryButton">
+                Explore Our History
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="historyIntroduction">
+
+        <h2>History of Portugal Football</h2>
+
+        <div class="sectionLine"></div>
+
+        <p>
+            The Portugal national football team was founded
+            in 1914 and represents Portugal in international
+            football competitions. The team is managed by
+            the Portuguese Football Federation (FPF).
+        </p>
+
+        <p>
+            Portugal has developed into one of Europe's
+            successful national football teams, with
+            talented players and important achievements
+            in international tournaments.
+        </p>
+
+        <p>
+            Over the years, Portugal has experienced
+            unforgettable moments, including its first
+            major European title in 2016 and victories
+            in the UEFA Nations League.
+        </p>
+
+<!-- EURO 2016 CELEBRATION IMAGE -->
+    <figure class="historyPhoto">
+      <img src="euro T trophy.jpg"
+         alt="Portugal winning UEFA EURO 2016">
+    <figcaption>
+        Portugal celebrating their EURO 2016 victory.
+      </figcaption>
+   </figure>
+
+    </section>
+
+
+    <!-- KEY MILESTONES -->
+    <section class="milestonesSection" id="milestones">
+
+        <h2>
+            <i class="fa-solid fa-trophy"></i>
+            Key Milestones
+        </h2>
+
+        <div class="sectionLine"></div>
+
+        <div class="milestonesGrid">
+
+            <article class="milestoneCard">
+                <span class="milestoneYear">1966</span>
+                <h3>World Cup Achievement</h3>
+                <p>
+                    Portugal finished third in the
+                    FIFA World Cup in England.
+                </p>
+            </article>
+
+            <article class="milestoneCard">
+                <span class="milestoneYear">2004</span>
+                <h3>European Championship Final</h3>
+                <p>
+                    Portugal hosted UEFA EURO 2004
+                    and finished as runners-up.
+                </p>
+            </article>
+
+            <article class="milestoneCard">
+                <span class="milestoneYear">2016</span>
+                <h3>European Champions</h3>
+                <p>
+                    Portugal defeated France 1–0
+                    in the UEFA EURO final and won
+                    its first major international title.
+                </p>
+            </article>
+
+            <article class="milestoneCard">
+                <span class="milestoneYear">2019</span>
+                <h3>Nations League Winners</h3>
+                <p>
+                    Portugal won the first UEFA Nations
+                    League after defeating the Netherlands.
+                </p>
+            </article>
+
+            <article class="milestoneCard">
+                <span class="milestoneYear">2025</span>
+                <h3>Another Nations League Title</h3>
+                <p>
+                    Portugal defeated Spain on penalties
+                    to win its second Nations League title.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- HONORS -->
+    <section class="honorsSection">
+
+        <h2>Major Honors & Trophies</h2>
+
+        <div class="sectionLine"></div>
+
+        <p class="honorsIntro">
+            Portugal's major international achievements.
+        </p>
+
+        <div class="honorsGrid">
+
+            <article class="honorCard">
+
+                <div class="honorIcon">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+
+                <h3>UEFA European Championship</h3>
+
+                <span class="honorYear">2016</span>
+
+                <p>
+                    Portugal won its first European
+                    Championship in France.
+                </p>
+
+            </article>
+
+
+            <article class="honorCard">
+
+                <div class="honorIcon">
+                    <i class="fa-solid fa-medal"></i>
+                </div>
+
+                <h3>UEFA Nations League</h3>
+
+                <span class="honorYear">2019 & 2025</span>
+
+                <p>
+                    Portugal became Nations League
+                    champions twice.
+                </p>
+
+            </article>
+
+
+            <article class="honorCard">
+
+                <div class="honorIcon">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+
+                <h3>FIFA World Cup</h3>
+
+                <span class="honorYear">1966</span>
+
+                <p>
+                    Portugal achieved third place
+                    at the World Cup.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- READ MORE -->
+    <section class="historyMoreSection">
+
+        <h2>Learn More About Portugal's History</h2>
+
+        <p>
+            From legendary players to unforgettable
+            international victories, Portugal continues
+            to build its football history.
+        </p>
+
+        <button id="historyReadMore"
+                class="primaryButton"
+                type="button"
+                aria-expanded="false"
+                aria-controls="historyExtra">
+
+            Read More
+            <i class="fa-solid fa-arrow-down"></i>
+
+        </button>
+
+        <div id="historyExtra"
+             class="historyExtra"
+             hidden>
+
+            <h3>Famous Portugal Football Legends</h3>
+
+            <p>
+                Eusébio was one of Portugal's greatest
+                football legends and played an important
+                role in the 1966 FIFA World Cup.
+            </p>
+
+            <p>
+                Cristiano Ronaldo became one of the most
+                recognised players in international football
+                and helped Portugal win UEFA EURO 2016
+                and the Nations League in 2019.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="siteFooter">
+
+    <div class="footerContainer">
+
+        <div class="footerLogo">
+
+            <img src="pic/logo.jpg"
+                 alt="Portugal National Football Team crest">
+
+            <div>
+                <strong>PORTUGAL</strong>
+                <span>NATIONAL FOOTBALL TEAM</span>
+                <small>PAIXÃO QUE UNE</small>
+            </div>
+
+        </div>
+
+        <nav class="footerNavigation"
+             aria-label="Footer navigation">
+
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="history-honors.html">History & Honors</a>
+            <a href="matches-fixtures.html">Matches & Fixtures</a>
+            <a href="news-updates.html">News & Updates</a>
+            <a href="media-gallery.html">Media & Gallery</a>
+            <a href="contact-us.html">Contact Us</a>
+
+        </nav>
+
+        <div class="socialArea">
+
+            <div class="socialIcons">
+
+                <a href="https://www.facebook.com/"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.youtube.com/"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+            <p>© 2026 Portugal National Football Team</p>
+
+            <div class="creditLinks">
+                <a href="Sitemap.html">Sitemap</a>
+                <a href="Credits.html">Credits</a>
+                <a href="Authenticity.html">
+                    Statement of Authenticity
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

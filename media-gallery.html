@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Photos and memorable moments of the Portugal National Football Team.">
+
+    <title>Portugal National Football Team | Media & Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- SKIP LINK -->
+<a href="#mainContent" class="skipLink">
+    Skip to main content
+</a>
+
+<!-- HEADER -->
+<header>
+
+    <!-- ACCESSIBILITY BAR -->
+    <div class="topBar">
+        <div class="topBarContainer">
+
+            <div class="languageControl">
+                <i class="fa-solid fa-globe"></i>
+
+                <label for="languageSelect" class="srOnly">
+                    Select language
+                </label>
+
+                <select id="languageSelect"
+                        aria-label="Select website language">
+                    <option value="en">English</option>
+                    <option value="pt">Português</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="ne">नेपाली</option>
+                </select>
+            </div>
+
+            <div class="accessibilityTools">
+
+                <div class="fontControls">
+                    <button id="decreaseText" type="button"
+                            aria-label="Decrease text size">A−</button>
+                    <button id="normalText" class="active"
+                            type="button"
+                            aria-label="Normal text size">A</button>
+                    <button id="increaseText" type="button"
+                            aria-label="Increase text size">A+</button>
+                </div>
+
+                <div class="themeControls">
+                    <button id="lightMode" class="active"
+                            type="button" aria-label="Light mode">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <button id="darkMode" type="button"
+                            aria-label="Dark mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+
+                <button id="speechButton" class="speechButton"
+                        type="button" aria-label="Read page aloud">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <span>Read aloud</span>
+                </button>
+
+                <button id="searchButton" class="topSearchButton"
+                        type="button" aria-label="Search website">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="mainNavigation" aria-label="Main navigation">
+
+        <div class="navigationContainer">
+
+            <a href="index.html" class="logoArea"
+               aria-label="Portugal National Football Team home">
+
+                <img src="pic/logo3.jpg"
+                     alt="" class="teamLogo">
+
+                <div class="logoText">
+                    <strong>PORTUGAL</strong>
+                    <span>NATIONAL FOOTBALL TEAM</span>
+                    <small>PAIXÃO QUE UNE</small>
+                </div>
+            </a>
+
+            <button id="menuButton" class="menuButton"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul id="navLinks" class="navLinks">
+
+                <li>
+                    <a href="index.html" data-i18n="home">Home</a>
+                </li>
+
+                <li>
+                    <a href="team.html" data-i18n="team">Team</a>
+                </li>
+
+                <li>
+                    <a href="history-honors.html" data-i18n="history">
+                        History &amp; Honors
+                    </a>
+                </li>
+
+                <li>
+                    <a href="matches-fixtures.html" data-i18n="matches">
+                        Matches &amp; Fixtures
+                    </a>
+                </li>
+
+                <li>
+                    <a href="news-updates.html" data-i18n="news">
+                        News &amp; Updates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="media-gallery.html"
+                       class="currentPage"
+                       aria-current="page"
+                       data-i18n="gallery">
+                        Media &amp; Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact-us.html" data-i18n="contact">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<!-- SEARCH PANEL -->
+<div id="searchPanel" class="searchPanel">
+    <div class="searchContainer">
+
+        <label for="websiteSearch" class="srOnly">
+            Search website
+        </label>
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input id="websiteSearch" type="search"
+               placeholder="Search Portugal website...">
+
+        <button id="closeSearch" type="button"
+                aria-label="Close search">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main id="mainContent">
+
+    <!-- GALLERY BANNER -->
+    <section class="galleryBanner">
+
+        <div class="galleryBannerContent">
+
+            <span>PORTUGAL FOOTBALL MOMENTS</span>
+
+            <h1>Media &amp; Gallery</h1>
+
+            <div class="titleLine"></div>
+
+            <p>
+                Explore the passion, talent and unforgettable
+                moments of Portuguese football.
+            </p>
+
+            <a href="#photoGallery" class="primaryButton">
+                Explore Gallery
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- GALLERY INTRODUCTION -->
+    <section class="galleryIntroduction">
+
+        <h2>Portugal in Pictures</h2>
+        <div class="sectionLine"></div>
+
+        <p>
+            Discover the players, teamwork and proud moments
+            that make Portugal's national football team special.
+            Select a photograph to view it in a larger size.
+        </p>
+
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section class="photoGallerySection" id="photoGallery">
+
+        <h2>Photo Gallery</h2>
+        <div class="sectionLine"></div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="galleryFilters" role="group"
+             aria-label="Filter gallery pictures">
+
+            <button class="galleryFilter active"
+                    type="button" data-filter="all"
+                    aria-pressed="true">
+                All Photos
+            </button>
+
+            <button class="galleryFilter"
+                    type="button" data-filter="team"
+                    aria-pressed="false">
+                Team
+            </button>
+
+            <button class="galleryFilter"
+                    type="button" data-filter="players"
+                    aria-pressed="false">
+                Players
+            </button>
+
+            <button class="galleryFilter"
+                    type="button" data-filter="moments"
+                    aria-pressed="false">
+                Moments
+            </button>
+
+        </div>
+
+        <div class="galleryGrid">
+
+            <!-- PHOTO 1 -->
+            <figure class="galleryCard" data-category="team">
+                <button class="galleryImageButton" type="button"
+                        aria-label="Enlarge Portugal team photo">
+                    <img src="pic/111.jpg"
+                         alt="Portugal national football team"
+                         loading="lazy">
+                </button>
+                <figcaption>Portugal National Team</figcaption>
+            </figure>
+
+            <!-- PHOTO 2 -->
+            <figure class="galleryCard" data-category="team">
+                <button class="galleryImageButton" type="button"
+                        aria-label="Enlarge Portugal players photo">
+                    <img src="pic/team.jpg"
+                         alt="Portugal football players together"
+                         loading="lazy">
+                </button>
+                <figcaption>Team Spirit</figcaption>
+            </figure>
+
+            <!-- PHOTO 3 -->
+            <figure class="galleryCard" data-category="team">
+                <button class="galleryImageButton" type="button"
+                        aria-label="Enlarge Portugal team picture">
+                    <img src="pic/team2.jpg"
+                         alt="Portugal football squad"
+                         loading="lazy">
+                </button>
+                <figcaption>One Team, One Nation</figcaption>
+            </figure>
+
+            <!-- PHOTO 4 -->
+            <figure class="galleryCard" data-category="players">
+                <button class="galleryImageButton" type="button"
+                        aria-label="Enlarge Cristiano Ronaldo photo">
+                    <img src="pic/cr7.jpg"
+                         alt="Cristiano Ronaldo"
+                         loading="lazy">
+                </button>
+                <figcaption>Cristiano Ronaldo</figcaption>
+            </figure>
+
+            <!-- PHOTO 5 -->
+            <figure class="galleryCard" data-category="players">
+                <button class="galleryImageButton" type="button"
+                        aria-label="Enlarge Rúben Dias photo">
+                    <img src="pic/rubin.jpg"
+                         alt="Portugal player Rúben Dias"
+                         loading="lazy">
+                </button>
+                <figcaption>Rúben Dias</figcaption>
+            </figure>
+
+            <!-- PHOTO 6 -->
+            <figure class="galleryCard" data-category="players">
+                <button class="galleryImageButton" type="button"
+                        aria-label="Enlarge Diogo Dalot photo">
+                    <img src="pic/dalot.jpg"
+                         alt="Portugal player Diogo Dalot"
+                         loading="lazy">
+                </button>
+                <figcaption>Diogo Dalot</figcaption>
+            </figure>
+
+            <!-- PHOTO 7 -->
+            <figure class="galleryCard" data-category="moments">
+                <button class="galleryImageButton" type="button"
+                        aria-label="Enlarge Portugal football photo">
+                    <img src="pic/team5.jpg"
+                         alt="Portugal players on the football field"
+                         loading="lazy">
+                </button>
+                <figcaption>Football Memories</figcaption>
+            </figure>
+
+            <!-- PHOTO 8 -->
+            <figure class="galleryCard" data-category="moments">
+                <button class="galleryImageButton" type="button"
+                        aria-label="Enlarge Portugal football image">
+                    <img src="pic/555.jpg"
+                         alt="Portugal football moment"
+                         loading="lazy">
+                </button>
+                <figcaption>Passion for Football</figcaption>
+            </figure>
+
+            <!-- PHOTO 9 -->
+            <figure class="galleryCard" data-category="moments">
+                <button class="galleryImageButton" type="button"
+                        aria-label="Enlarge Portugal football highlight">
+                    <img src="pic/666.webp"
+                         alt="Portugal football highlight"
+                         loading="lazy">
+                </button>
+                <figcaption>Proud Moments</figcaption>
+            </figure>
+
+        </div>
+
+        <p id="galleryStatus" aria-live="polite">
+            Showing all 9 photos.
+        </p>
+
+    </section>
+
+    <!-- IMAGE VIEWER -->
+    <div id="galleryLightbox"
+         class="galleryLightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Photo viewer"
+         hidden>
+
+        <button id="closeGallery"
+                class="closeGallery"
+                type="button"
+                aria-label="Close photo viewer">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <figure>
+            <img id="galleryLargeImage"
+                 src=""
+                 alt="">
+            <figcaption id="galleryCaption"></figcaption>
+        </figure>
+
+    </div>
+
+    <!-- MORE MEDIA -->
+    <section class="galleryMoreSection">
+
+        <h2>Explore More Portugal Football</h2>
+        <div class="sectionLine"></div>
+
+        <p>
+            Discover the team's history, international
+            achievements and upcoming football matches.
+        </p>
+
+        <div class="galleryMoreButtons">
+
+            <a href="history-honors.html" class="primaryButton">
+                Our History
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="matches-fixtures.html" class="primaryButton">
+                View Matches
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="siteFooter">
+
+    <div class="footerContainer">
+
+        <div class="footerLogo">
+            <img src="pic/logo.jpg"
+                 alt="Portugal National Football Team crest">
+
+            <div>
+                <strong>PORTUGAL</strong>
+                <span>NATIONAL FOOTBALL TEAM</span>
+                <small>PAIXÃO QUE UNE</small>
+            </div>
+        </div>
+
+        <nav class="footerNavigation"
+             aria-label="Footer navigation">
+
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="history-honors.html">History &amp; Honors</a>
+            <a href="matches-fixtures.html">Matches &amp; Fixtures</a>
+            <a href="news-updates.html">News &amp; Updates</a>
+            <a href="media-gallery.html">Media &amp; Gallery</a>
+            <a href="contact-us.html">Contact Us</a>
+
+        </nav>
+
+        <div class="socialArea">
+
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.youtube.com/"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+
+            <p>© 2026 Portugal National Football Team</p>
+
+            <div class="creditLinks">
+                <a href="Sitemap.html">Sitemap</a>
+                <a href="Credits.html">Credits</a>
+                <a href="Authenticity.html">
+                    Statement of Authenticity
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

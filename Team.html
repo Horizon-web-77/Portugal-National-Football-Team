@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portugal National Football Team website featuring team news, matches, history and media.">
+
+    <title>Portugal National Football Team | Team</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+
+<body>
+
+<!-- ACCESSIBILITY: Skip Link -->
+<a href="#mainContent" class="skipLink">
+    Skip to main content
+</a>
+
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header>
+
+    <!-- TOP ACCESSIBILITY BAR -->
+
+<div class="topBar">
+
+    <div class="topBarContainer">
+
+        <!-- LANGUAGE -->
+
+        <div class="languageControl">
+
+            <i class="fa-solid fa-globe"
+               aria-hidden="true"></i>
+
+            <label for="languageSelect"
+                   class="srOnly">
+                Select language
+            </label>
+
+            <select id="languageSelect"
+                    aria-label="Select website language">
+
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+                <option value="ne">नेपाली</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- ACCESSIBILITY TOOLS -->
+
+        <div class="accessibilityTools">
+
+            <!-- TEXT SIZE -->
+
+            <div class="fontControls"
+                 aria-label="Text size controls">
+
+                <button id="decreaseText"
+                        type="button"
+                        aria-label="Decrease text size">
+                    A−
+                </button>
+
+                <button id="normalText"
+                        type="button"
+                        class="active"
+                        aria-label="Normal text size">
+                    A
+                </button>
+
+                <button id="increaseText"
+                        type="button"
+                        aria-label="Increase text size">
+                    A+
+                </button>
+
+            </div>
+
+
+            <!-- LIGHT / DARK MODE -->
+
+            <div class="themeControls">
+
+                <button id="lightMode"
+                        type="button"
+                        class="active"
+                        aria-label="Light mode">
+
+                    <i class="fa-solid fa-sun"></i>
+
+                </button>
+
+                <button id="darkMode"
+                        type="button"
+                        aria-label="Dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- READ ALOUD -->
+
+            <button id="speechButton"
+                    class="speechButton"
+                    type="button"
+                    aria-label="Read page aloud">
+
+                <i class="fa-solid fa-volume-high"></i>
+
+                <span>Read aloud</span>
+
+            </button>
+
+
+            <!-- SEARCH -->
+
+            <button id="searchButton"
+                    class="topSearchButton"
+                    type="button"
+                    aria-label="Search website">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <span>Search</span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+              
+
+
+    <!-- ==========================================
+         MAIN NAVIGATION
+    ========================================== -->
+
+    <nav class="mainNavigation"
+         aria-label="Main navigation">
+
+        <div class="navigationContainer">
+
+
+            <!-- Logo -->
+
+    <a href="index.html"
+         class="logoArea"
+        aria-label="Portugal National Football Team home">
+
+    <img src="pic/logo3.jpg"
+         alt=""
+         class="teamLogo">
+
+    <div class="logoText">
+
+        <strong>PORTUGAL</strong>
+
+        <span>
+            NATIONAL FOOTBALL TEAM
+        </span>
+
+        <small>
+            PAIXÃO QUE UNE
+        </small>
+
+    </div>
+
+</a>
+
+            <!-- Mobile Menu Button -->
+
+            <button id="menuButton"
+                    class="menuButton"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+            <!-- Navigation Links -->
+
+            <ul id="navLinks" class="navLinks">
+
+        <li>
+            <a href="index.html"
+             data-i18n="home">
+             Home
+           </a>
+
+        </li>
+
+    <li>
+        <a href="team.html"
+            class="currentPage"
+            data-i18n="team">
+            Team
+        </a>
+    
+    
+    
+    </li>
+
+    <li>
+        <a href="history-honors.html"
+           data-i18n="history">
+            History &amp; Honors
+        </a>
+    </li>
+
+    <li>
+        <a href="matches-fixtures.html"
+           data-i18n="matches">
+            Matches &amp; Fixtures
+        </a>
+    </li>
+
+    <li>
+        <a href="news-updates.html"
+           data-i18n="news">
+            News &amp; Updates
+        </a>
+    </li>
+
+    <li>
+        <a href="media-gallery.html"
+           data-i18n="gallery">
+            Media &amp; Gallery
+        </a>
+    </li>
+
+    <li>
+    <a href="contact-us.html"
+       data-i18n="contact">
+        Contact Us
+    </a>
+    </li>
+
+      </ul>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ==========================================
+     SEARCH PANEL
+========================================== -->
+
+<div id="searchPanel"
+     class="searchPanel">
+
+    <div class="searchContainer">
+
+        <label for="websiteSearch"
+               class="srOnly">
+            Search website
+        </label>
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input id="websiteSearch"
+               type="search"
+               placeholder="Search Portugal website...">
+
+        <button id="closeSearch"
+                type="button"
+                aria-label="Close search">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     MAIN
+========================================== -->
+
+<main id="mainContent">
+
+<!-- TEAM BANNER -->
+
+<section class="teamBanner">
+
+    <img src="pic/team5.jpg"
+         alt="Portugal national football team">
+
+    <div class="teamBannerText">
+        <h1>Portugal Squad</h1>
+        <div class="titleLine"></div>
+    </div>
+
+</section>
+
+
+<!-- PLAYERS SECTION -->
+
+<section class="playersSection">
+
+    <h2>Team Image &amp; Players</h2>
+
+    <div class="sectionLine"></div>
+
+    <p class="playersIntro">
+        Meet the players representing Portugal.
+    </p>
+
+
+    <div class="playersGrid">
+
+        <!-- PLAYER 1 -->
+        <article class="playerCard">
+
+            <img src="pic/cr7.jpg"
+                 alt="Cristiano Ronaldo">
+
+            <div class="playerInfo">
+                <span class="playerNumber">7</span>
+
+                <div class="playerDetails">
+                    <h3>Cristiano Ronaldo</h3>
+                    <p>Forward</p>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- PLAYER 2 -->
+        <article class="playerCard">
+
+            <img src="pic/rubin.jpg"
+                 alt="Portugal defender">
+
+            <div class="playerInfo">
+                <span class="playerNumber">3</span>
+
+                <div class="playerDetails">
+                    <h3>Rúben Dias</h3>
+                    <p>Defender</p>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- PLAYER 3 -->
+        <article class="playerCard">
+
+            <img src="pic/555.jpg"
+                 alt="Portugal midfielder">
+
+            <div class="playerInfo">
+                <span class="playerNumber">8</span>
+
+                <div class="playerDetails">
+                    <h3>Bruno Fernandes</h3>
+                    <p>Midfielder</p>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- PLAYER 4 -->
+        <article class="playerCard">
+
+            <img src="pic/goalki.jpg"
+                 alt="Portugal goalkeeper">
+
+            <div class="playerInfo">
+                <span class="playerNumber">22</span>
+
+                <div class="playerDetails">
+                    <h3>Diogo Costa</h3>
+                    <p>Goalkeeper</p>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- PLAYER 5 -->
+        <article class="playerCard">
+
+            <img src="pic/666.webp"
+                 alt="Portugal midfielder">
+
+            <div class="playerInfo">
+                <span class="playerNumber">10</span>
+
+                <div class="playerDetails">
+                    <h3>Bernardo Silva</h3>
+                    <p>Midfielder</p>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- PLAYER 6 -->
+        <article class="playerCard">
+
+            <img src="pic/dalot.jpg"
+                 alt="Portugal defender">
+
+            <div class="playerInfo">
+                <span class="playerNumber">20</span>
+
+                <div class="playerDetails">
+                    <h3>Portugal Player</h3>
+                    <p>Defender</p>
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<!--  FOOTER  -->
+
+<footer class="siteFooter">
+
+    <div class="footerContainer">
+
+
+        <!-- Logo -->
+
+        <div class="footerLogo">
+
+            <img src="pic/logo.jpg"
+                 alt="Portugal National Football Team crest">
+
+            <div>
+
+                <strong>PORTUGAL</strong>
+
+                <span>
+                    NATIONAL FOOTBALL TEAM
+                </span>
+
+                <small>
+                    PAIXÃO QUE UNE
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer Links -->
+
+        <nav class="footerNavigation"
+             aria-label="Footer navigation">
+
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="history-honors.html">History &amp; Honors</a>
+            <a href="matches-fixtures.html">Matches &amp; Fixtures</a>
+            <a href="news-updates.html">News &amp; Updates</a>
+            <a href="media-gallery.html">Media &amp; Gallery</a>
+            <a href="contact-us.html">Contact Us</a>
+
+        </nav>
+
+
+
+        <!-- Social -->
+
+        <div class="socialArea">
+
+            <div class="socialIcons">
+
+                <a href="https://www.facebook.com//"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com//"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.YouTube.com//"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+            <p>
+                © 2026 Portugal National Football Team
+            </p>
+
+            <div class="creditLinks">
+
+                <a href="Sitemap.html">Sitemap</a>
+                <a href="Credits.html">Credits</a>
+                <a href="Authenticity.html">Statement of Authenticity</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
